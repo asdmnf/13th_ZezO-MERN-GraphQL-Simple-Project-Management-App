@@ -1,6 +1,7 @@
 import UserCardHook from '../../Hooks/UserCardHook'
 import './UserCard.css'
 import { Link } from 'react-router-dom'
+import scrollToTop from '../../Utils/scrollToTop'
 
 const UserCard = (props) => {
   const [deleteIconOnClickHandle] = UserCardHook(props.user?.id)
@@ -20,7 +21,7 @@ const UserCard = (props) => {
           <p className="card-text user-card__phone-content ms-1">{props.user?.phone}</p>
         </div>
       </div>
-      <Link to={`/user/${props.user?.id}`} className="user-card__view-btn btn">View User</Link>
+      <Link to={`/user/${props.user?.id}`} className="user-card__view-btn btn" onClick={()=> scrollToTop()}>View User</Link>
     </div>
   )
 }

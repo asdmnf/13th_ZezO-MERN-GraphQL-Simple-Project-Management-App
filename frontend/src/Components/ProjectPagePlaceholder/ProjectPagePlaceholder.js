@@ -7,6 +7,8 @@ const ProjectPagePlaceholder = () => {
         <p className="project-page__placeholder-description mt-4"> </p>
         <p className="project-page__placeholder-description"> </p>
         <p className="project-page__placeholder-description"> </p>
+        <p className="project-page__placeholder-description"> </p>
+        <p className="project-page__placeholder-description"> </p>
         <h3 className="project-page__placeholder-status text-secondary mt-4"> </h3>
         <p className="project-page__placeholder-status-text"> </p>
       </div>

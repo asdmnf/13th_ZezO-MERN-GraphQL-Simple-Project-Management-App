@@ -5,6 +5,7 @@ import UserCardPlaceholder from '../../Components/UserCardPlaceholder/UserCardPl
 import ProjectPagePlaceholder from '../../Components/ProjectPagePlaceholder/ProjectPagePlaceholder'
 import ProjectPageHook from '../../Hooks/ProjectPageHook'
 import AlertCard from '../../Components/AlertCard/AlertCard'
+import scrollToTop from '../../Utils/scrollToTop'
 
 const ProjectPage = () => {
   const [error, getProjectLoading, data, projectNameValue, descriptionValue, statusValue, projectNameInputOnChangeHandle, descriptionInputOnChangeHandle, statusInputOnChangeHandle, updateProjectOnClickHandle, updateProjectLoading, deleteProjectOnClickHandle, deleteProjectLoading] = ProjectPageHook()
@@ -13,7 +14,7 @@ const ProjectPage = () => {
     <div className="project-page container card p-5 mt-4">
       {/* back icon */}
       <span className="project-page__back-icon">
-        <Link to="/">
+        <Link to="/" onClick={()=> scrollToTop()}>
           <i className="fa-solid fa-arrow-left-long"></i>
         </Link>
       </span>

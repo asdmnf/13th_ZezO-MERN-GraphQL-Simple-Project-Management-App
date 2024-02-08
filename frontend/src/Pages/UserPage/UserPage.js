@@ -5,6 +5,7 @@ import ProjectCardPlaceholder from '../../Components/ProjectCardPlaceholder/Proj
 import UserPagePlaceHolder from '../../Components/UserPagePlaceHolder/UserPagePlaceHolder'
 import UserPageHook from '../../Hooks/UserPageHook'
 import AlertCard from '../../Components/AlertCard/AlertCard'
+import scrollToTop from '../../Utils/scrollToTop'
 
 const UserPage = () => {
   const [nameValue, emailValue, phoneValue, nameInputOnChangeHandle, emailInputOnChangeHandle, phoneInputOnChangeHandle, updateUserOnClickHandle, deleteUserOnClickHandle, data, error, getUserLoading, updateUserLoading, deleteUserLoading] = UserPageHook()
@@ -12,7 +13,7 @@ const UserPage = () => {
     <div className="user-page container card p-5 mt-4">
       {/* back icon */}
       <span className="user-page__back-icon">
-        <Link to="/">
+        <Link to="/" onClick={()=> scrollToTop()}>
           <i className="fa-solid fa-arrow-left-long"></i>
         </Link>
       </span>

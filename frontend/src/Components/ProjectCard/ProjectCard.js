@@ -1,6 +1,7 @@
 import ProjectCardHook from '../../Hooks/ProjectCardHook'
 import './ProjectCard.css'
 import { Link } from 'react-router-dom'
+import scrollToTop from '../../Utils/scrollToTop'
 
 const ProjectCard = (props) => {
   const [deleteIconOnClickHandle] = ProjectCardHook(props.project?.id)
@@ -16,7 +17,7 @@ const ProjectCard = (props) => {
           <p className="card-text">{props.project?.status}</p>
         </div>
       </div>
-      <Link to={`/project/${props.project?.id}`} className="project-card__view-btn btn">View Project</Link>
+      <Link to={`/project/${props.project?.id}`} className="project-card__view-btn btn" onClick={()=> scrollToTop()}>View Project</Link>
     </div>
   )
 }
