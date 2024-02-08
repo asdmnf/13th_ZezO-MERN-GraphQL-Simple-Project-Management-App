@@ -26,7 +26,8 @@ const UserPageHook = () => {
       setNameValue(data.getOneUser.name)
       setEmailValue(data.getOneUser.email)
       setPhoneValue(data.getOneUser.phone)
-    }
+    },
+    fetchPolicy: 'cache-and-network',
   })
 
   // update user mutation

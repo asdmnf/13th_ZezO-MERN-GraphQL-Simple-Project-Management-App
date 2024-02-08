@@ -11,6 +11,12 @@
   cursor: pointer;
 }
 
+.user-card__title, .user-card__email-content, .user-card__phone-content {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .user-card__title {
   color: var(--bs-pink-600);
 }

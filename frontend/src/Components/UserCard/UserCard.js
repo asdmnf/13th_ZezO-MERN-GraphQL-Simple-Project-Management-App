@@ -13,11 +13,11 @@ const UserCard = (props) => {
         <h5 className="card-title user-card__title mb-3">{props.user?.name}</h5>
         <div className="user-card__email d-flex align-items-center">
           <i className="fa-solid fa-envelope"></i>
-          <p className="card-text">{props.user?.email}</p>
+          <p className="card-text user-card__email-content">{props.user?.email}</p>
         </div>
         <div className="user-card__phone d-flex align-items-center mt-1">
           <i className="fa-solid fa-mobile-retro"></i>
-          <p className="card-text ms-1">{props.user?.phone}</p>
+          <p className="card-text user-card__phone-content ms-1">{props.user?.phone}</p>
         </div>
       </div>
       <Link to={`/user/${props.user?.id}`} className="user-card__view-btn btn">View User</Link>
