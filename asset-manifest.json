@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/13th_ZezO-MERN-GraphQL-Simple-Project-Management-App/static/css/main.357dc5c0.css",
-    "main.js": "/13th_ZezO-MERN-GraphQL-Simple-Project-Management-App/static/js/main.d4b9f546.js",
+    "main.js": "/13th_ZezO-MERN-GraphQL-Simple-Project-Management-App/static/js/main.2cef4acd.js",
     "static/media/01_graphql_logo_icon.png": "/13th_ZezO-MERN-GraphQL-Simple-Project-Management-App/static/media/01_graphql_logo_icon.f230810f3bb3337959b0.png",
     "index.html": "/13th_ZezO-MERN-GraphQL-Simple-Project-Management-App/index.html",
     "main.357dc5c0.css.map": "/13th_ZezO-MERN-GraphQL-Simple-Project-Management-App/static/css/main.357dc5c0.css.map",
-    "main.d4b9f546.js.map": "/13th_ZezO-MERN-GraphQL-Simple-Project-Management-App/static/js/main.d4b9f546.js.map"
+    "main.2cef4acd.js.map": "/13th_ZezO-MERN-GraphQL-Simple-Project-Management-App/static/js/main.2cef4acd.js.map"
   },
   "entrypoints": [
     "static/css/main.357dc5c0.css",
-    "static/js/main.d4b9f546.js"
+    "static/js/main.2cef4acd.js"
   ]
 }
